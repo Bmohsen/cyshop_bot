@@ -1,10 +1,7 @@
 // Import the necessary styles globally
 import { Title, Image } from '@telegram-apps/telegram-ui';
 import '@telegram-apps/telegram-ui/dist/styles.css';
-import { useEffect, useState } from 'react';
-import Loading from './components/loading';
 import logo from './assets/cy-logo.svg';
-import WebApp from '@twa-dev/sdk';
 
 const titleStyle: React.CSSProperties = {
   fontFamily: 'lalezar',
@@ -24,8 +21,8 @@ const App = () => {
 
   return (
     <>
-     <div style={appStyle}>
-      <Image
+      <div style={appStyle}>
+        <Image
           size={96}
           src={logo}
         />
@@ -36,7 +33,7 @@ const App = () => {
         >
           به فروشگاه سای سافت ور خوش آمدید.
         </Title>
-       
+
       </div>
     </>
   )
