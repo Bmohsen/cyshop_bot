@@ -12,13 +12,15 @@ const layout: React.CSSProperties = {
   display: 'flex',
   width: '100vw',
   height: '100vh',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  backgroundColor: WebApp.colorScheme == 'dark' ? '#212121' : 'white',
+  color: WebApp.colorScheme == 'dark' ? 'white' : '#212121'
 }
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <AppRoot style={layout} appearance='dark'>
+    <AppRoot style={layout} appearance={WebApp.colorScheme}>
     <App />
     </AppRoot>
   </React.StrictMode>,
